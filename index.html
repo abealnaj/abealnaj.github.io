@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  background-image: url("pixel_door_closed.jpg");
+  height: 448px;
+  width: 324px;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+}
+
+.column:hover {
+  background-image: url("pixel_door_open.jpg");
+  height: 522px;
+  width: 324px;
+  position: relative;
+  top: 90px;
+}
+
+.row {
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+}
+	
+</style>
+</head>
+
+<body>
+
+<div class="row">
+  <div class="column" onclick="window.location.href='door1.html'">
+  </div>
+  <div class="column" onclick="window.location.href='door2.html'">
+  </div>
+  <div class="column" onclick="window.location.href='door3.html'">
+  </div>
+</div>
+	
+</body>
+</html>
+
